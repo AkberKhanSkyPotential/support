@@ -1,0 +1,87 @@
+{
+    "name": "akberkhanskypotential/support",
+    "description": "Akberkhanskypotential common support helpers, contracts, and traits required by various Akberkhanskypotential packages. Validator functionality, and basic controller included out-of-the-box.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "contract",
+        "validator",
+        "timezones",
+        "mimetype",
+        "support",
+        "helper",
+        "trait"
+    ],
+    "license": "MIT",
+    "homepage": "https://www.skypotential.com/",
+    "support": {
+        "email": "akber.skypotential@gmail.com",
+        "issues": "https://github.com/akberkhanskypotential/subscriptions/issues",
+        "source": "https://github.com/akberkhanskypotential/subscriptions",
+        "docs": "https://github.com/akberkhanskypotential/subscriptions/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "Skypotential",
+            "homepage": "https://www.skypotential.com/",
+            "email": "support@skypotential.com"
+        },
+        {
+            "name": "Akber Khan",
+            "homepage": "https://www.skypotential.com/",
+            "email": "akber.skypotential@gmail.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "The Generous Laravel Community",
+            "homepage": "https://github.com/akberkhanskypotential/subscriptions/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "felixkiss/uniquewith-validator": "^3.4.0",
+        "illuminate/auth": "^7.0.0",
+        "illuminate/bus": "^7.0.0",
+        "illuminate/contracts": "^7.0.0",
+        "illuminate/http": "^7.0.0",
+        "illuminate/routing": "^7.0.0",
+        "illuminate/support": "^7.0.0",
+        "illuminate/validation": "^7.0.0",
+        "spatie/laravel-schemaless-attributes": "^1.7.0",
+        "watson/validating": "^5.0.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.27.0",
+        "phpunit/phpunit": "^9.0.0"
+    },
+    "autoload": {
+        "files": [
+            "src/Support/helpers.php"
+        ],
+        "psr-4": {
+            "Akberkhanskypotential\\Support\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Akberkhanskypotential\\Support\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Akberkhanskypotential\\Support\\Providers\\SupportServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
